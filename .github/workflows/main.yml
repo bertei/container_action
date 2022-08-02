@@ -7,7 +7,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: run the action
         id: hello ## lets you identify it in the workflow
-        uses: ./
+      - uses: ./
         with:
           myInput: 'Bernaaa'
       - name: output
