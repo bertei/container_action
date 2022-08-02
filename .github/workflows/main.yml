@@ -6,11 +6,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: run the action
-        id: hello ## lets you identify it in the workflow
-      - uses: ./
+        id: hello 
+        uses: ./
         with:
           myInput: 'Bernaaa'
-      - name: output
+      - name: output the memory
         run: |
             echo ${{ steps.hello.outputs.memory }}
             echo "total memory sucessfully output"
